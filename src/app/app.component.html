@@ -5,11 +5,14 @@
     <input name="title" id="title" #newtitle>
   </div>
   <div class="field">
-    <label for="linkk">Link:</label>
+    <label for="link">Link:</label>
     <input name="link" id="link" #newlink>
   </div>
-  <button (click)="addArticle(newtitle, newlink)"
-  class="ui positive right floated button">
- Submit link
- </button>
+  <button (click)="addArticle(newtitle, newlink)" class="ui positive right floated button">
+    Submit link
+  </button>
 </form>
+
+<div class="ui grid posts">
+  <app-article></app-article>
+</div>
